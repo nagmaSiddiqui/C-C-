@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int  num=5;
+   cout<<num<<endl;
+   // adress of num
+   
+   cout<<"adress ofnum is:"<<&num<<endl;
+   
+   int *ptr=&num;
+   cout<<"value is:"<<ptr<<endl;
+   cout<<"value is: "<<*ptr<<endl;
+   
+   double d=4.3;
+   double *ptr2= &d;
+   cout<<"value is:"<<ptr2<<endl;
+   cout<<"value is: "<<*ptr2<<endl;
+   
+   cout<<"size of interger is:"<<sizeof(num)<<endl;
+   cout<<"size of pointer 1 is:"<<sizeof(ptr)<<endl;
+   cout<<"size of pointer 2 is:"<<sizeof(ptr2)<<endl;
+    return 0;
+}
