@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int num=5;
+   int a=num;
+   cout<<"a before"<<num<<endl;
+   a++;
+   cout<<"b before"<<num<<endl;
+   
+   cout<<num<<endl;
+   
+    int *p=&num;
+    cout<<"before"<<num<<endl;
+    (*p)++;
+    cout<<"before"<<num<<endl;
+    
+    return 0;
+}
