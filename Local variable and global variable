@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+int score=15; //global variable
+
+void a(int& i){// LOCAL VARIABLE FOR A FUNCTION
+cout<<score<<"in a"<<endl;
+    char ch='a';
+    cout<<i<<endl;
+    
+}
+
+void b( int& i){  //regerence variable
+    cout<<i<<endl;
+    
+}
+
+int main()
+{
+ int i=5;// I IS LOCAL VALUE FOR MAIN FUNCTION 
+ 
+ {
+     int i=2;
+     cout<<i<<endl;
+ }
+   
+  cout<<i<<endl; 
+    return 0;
+}
