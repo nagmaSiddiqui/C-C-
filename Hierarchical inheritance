@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+class Animal{
+   public:
+   int age;
+   int height;
+   
+   public:
+   void bark(){
+       cout<<"barking"<<endl;
+   }
+};
+class Dog: public Animal{
+    public:
+   void eatBones(){
+       cout<<"dog is used to eat bones"<<endl;
+   } 
+};
+class Cat: public Animal{
+    public:
+    void drinkMilk(){
+        cout<<"Cat is used to drink milk"<<endl;
+    }
+};
+        
+ 
+
+int main()
+{
+
+Dog d;
+d.eatBones();
+Cat c;
+c.drinkMilk();
+c.bark();
+    return 0;
+}
